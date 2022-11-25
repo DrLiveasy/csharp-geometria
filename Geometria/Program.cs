@@ -14,3 +14,6 @@ InputUtente.baseRettangolo = Convert.ToInt32(Console.ReadLine());
 
 
 
+InputUtente.calcolaArea();
+InputUtente.calcolaPerimetro();
+
