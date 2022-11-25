@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Geometria
 {
-    internal class Rettangolo
+    public class Rettangolo
     {
+        public int baseRettangolo;
+        public int altezzaRettangolo;
+
+
+
     }
 }
