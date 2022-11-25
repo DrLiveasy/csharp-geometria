@@ -25,5 +25,13 @@ namespace Geometria
 
         }
 
+        public void StampaTuttiIDati()
+        {
+            Console.WriteLine($"Base: {baseRettangolo}");
+            Console.WriteLine($"Altezza: {altezzaRettangolo}");
+            Console.WriteLine($"Perimetro: {calcolaPerimetro}");
+            Console.WriteLine($"Area: {calcolaArea}");
+        }
+
     }
 }
