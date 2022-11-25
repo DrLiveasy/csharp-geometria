@@ -27,10 +27,12 @@ namespace Geometria
 
         public void StampaTuttiIDati()
         {
+            int area = baseRettangolo * altezzaRettangolo;
+            int perimetro = (baseRettangolo + altezzaRettangolo) * 2;
             Console.WriteLine($"Base: {baseRettangolo}");
             Console.WriteLine($"Altezza: {altezzaRettangolo}");
-            Console.WriteLine($"Perimetro: {calcolaPerimetro}");
-            Console.WriteLine($"Area: {calcolaArea}");
+            Console.WriteLine($"Perimetro: {perimetro}");
+            Console.WriteLine($"Area: {area}");
         }
 
     }
