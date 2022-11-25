@@ -36,7 +36,7 @@ SestoRettangolo.baseRettangolo = 18;
 //--INPUT RETTANGOLO UTENTE--
 Console.WriteLine("Inserisci L'altezza dell Rettangolo");
 InputUtente.altezzaRettangolo = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Inserisci il Perimetro dell Rettangolo");
+Console.WriteLine("Inserisci La Base del Rettangolo");
 InputUtente.baseRettangolo = Convert.ToInt32(Console.ReadLine());
 //--OUTPUT RETTANGOLO UTENTE--
 InputUtente.calcolaArea();
