@@ -12,9 +12,15 @@ namespace LiveCoding
         {
             private int baseRettangolo;
             private int altezzaRettangolo;
-            public string Colore;
+            private string Colore;
 
             // Posso definire un altro COSTRUTTORE customizzato usando ancora l'OVERLOAD
+            public Rettangolo(int altezzaRettangolo, int baseRettangolo)
+            {
+                this.baseRettangolo = baseRettangolo;
+                this.altezzaRettangolo = altezzaRettangolo;
+            }
+
             public Rettangolo(int altezzaRettangolo, int baseRettangolo, string colore)
             {
                 this.baseRettangolo = baseRettangolo;
@@ -47,8 +53,55 @@ namespace LiveCoding
             }
 
 
+            //Getters 
+            public string GetColore()
+            {
+                return this.Colore;
+            }
+            public int GetAltezza()
+            {
+                return this.altezzaRettangolo;
+            }
+            public int GetBase()
+            {
+                return this.baseRettangolo;
+            }
 
 
+            //Setters
+            public void SetColore(string colore)
+            {
+                if (colore != "")
+                {
+                    this.Colore = colore;
+                }
+                else
+                {
+                    Console.WriteLine("Non posso non avere un colore");
+                }
+            }
+            public void SetAltezza(int altezza)
+            {
+                if (altezza > 0)
+                {
+                    this.altezzaRettangolo = altezza;
+                }
+                else
+                {
+                    Console.WriteLine("Non vale un altezza negativa o uguale a zero");
+                }
+            }
+            public void SetBase(int Base)
+            {
+                if (Base > 0)
+                {
+                    this.baseRettangolo = Base;
+                }
+                else
+                {
+                    Console.WriteLine("Non vale un altezza negativa o uguale a zero");
+                }
+            }
 
 
 
