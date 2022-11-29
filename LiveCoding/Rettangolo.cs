@@ -10,15 +10,19 @@ namespace LiveCoding
     {
         public class Rettangolo
         {
-            public int baseRettangolo;
-            public int altezzaRettangolo;
+            private int baseRettangolo;
+            private int altezzaRettangolo;
+            public string Colore;
 
             // Posso definire un altro COSTRUTTORE customizzato usando ancora l'OVERLOAD
-            public Rettangolo(int altezzaRettangolo, int baseRettangolo)
+            public Rettangolo(int altezzaRettangolo, int baseRettangolo, string colore)
             {
                 this.baseRettangolo = baseRettangolo;
                 this.altezzaRettangolo = altezzaRettangolo;
+                this.Colore = colore;
             }
+
+
 
             public int calcolaArea()
             {
@@ -39,6 +43,7 @@ namespace LiveCoding
                 Console.WriteLine($"Altezza: {altezzaRettangolo}");
                 Console.WriteLine($"Perimetro: {calcolaPerimetro()}");
                 Console.WriteLine($"Area: {calcolaArea()}");
+                Console.WriteLine($"colore rettangolo: {Colore}");
             }
 
 
@@ -72,8 +77,12 @@ namespace LiveCoding
                 }
                 Console.WriteLine("\"");
             }
+           
+
+
 
         }
+
     }
 
 }
